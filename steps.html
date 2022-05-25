@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Meal Plan</title>
+
+    <link rel="stylesheet" href="/style3.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="logo_container">
+      <a href="/index.html" id="rgb" class="r">
+        <img
+          src="https://cdn.glitch.com/c164f59d-f7c7-4a8c-b255-d82226b7df9a%2Fback.png?v=1615289711967"
+          id="back_img"
+          alt="back icon"
+        />
+        Home
+      </a>
+      <a href="/steps.html" id="rgb1" class="r">
+        <img
+          src="https://cdn.glitch.com/c164f59d-f7c7-4a8c-b255-d82226b7df9a%2Frefresh_black_192x192.png?v=1615438265378"
+          id="back_img1"
+          alt="back icon"
+        />
+        Reset
+      </a>
+    </div>
+    <div class="container" id="contain">
+      <div id="mains">
+        <h1 class="header">
+          Let's calculate how much calorie for this meal!
+        </h1>
+        <div id="inputbox">
+          <div id="title">
+            <p>
+              Enter your body measurements here and we can caculate for you!
+            </p>
+            <div class="surs">
+              <div class="sur">
+                <form>
+                  Select your gender:
+                  <input type="radio" id="male" name="gender" class = "male" value="male" />
+                  <label for="male">Male</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    class = "female"
+                    value="female"
+                  />
+                  <label for="female">Female</label><br />
+                  <p1> A little more information: </p1><br />
+                  <div class="i">
+                    <ul style="list-style-type:none">
+                      <li><label for="age">Enter your age: </label></li>
+                      <li>
+                        <label for="weight">Enter your weight in KG: </label>
+                      </li>
+                      <li>
+                        <label for="height">Enter your height in cm: </label>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <input
+                          type="text"
+                          id="age"
+                          name="age"
+                          placeholder="Enter Age"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          type="text"
+                          id="weight"
+                          name="weight"
+                          placeholder="Enter Weight (KG)"
+                        />
+                      </li>
+                      <li>
+                        <input
+                          type="text"
+                          id="height"
+                          name="height"
+                          placeholder="Enter Height (CM)"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+
+              <div class="bmrs">
+                <div id="calcu" name="nex">
+                  <span>Calculate!</span>
+                </div>
+              </div>
+              <div class="bmr"></div>
+              <div class="err" id = "err"></div>
+            </div>
+            <p1>
+              And select which meal:
+            </p1>
+            <form>
+              <input
+                type="radio"
+                id="breakfast"
+                name="type3"
+                value="breakfast"
+              />
+              <label for="breakfast"
+                >Breakfast (25% of your daily calorie intake)</label
+              ><br />
+              <input type="radio" id="lunch" name="type3" value="lunch" />
+              <label for="lunch">Lunch (40% of your daily calorie intake)</label
+              ><br />
+              <input type="radio" id="dinner" name="type3" value="dinner" />
+              <label for="dinner"
+                >Dinner (35% of your daily calorie intake)</label
+              >
+              <div id="next" name="nex">
+                <span>Search!</span>
+              </div>
+              <div class="err1" id = "err1"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="res" style="display:none">
+      <div id="next1" name="nex">
+        <span>Refresh Choice</span>
+      </div>
+
+      <div id="searchcont">
+        <div class="search-result"></div>
+        <div class="search-result1"></div>
+        <div class="search-result2"></div>
+      </div>
+    </div>
+  </body>
+</html>

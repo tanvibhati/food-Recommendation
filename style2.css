@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  main {
+    flex: 1;
+  }
+  body {
+    background-color: white;
+    font-family: sans-serif;
+    background-image: url("https://cdn.glitch.com/c164f59d-f7c7-4a8c-b255-d82226b7df9a%2Ftitle-background-02.jpg?v=1615375787418");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 160px;
+    background-attachment: fixed;
+  }
+  
+  #splash {
+    display: flex;
+    flex-direction: row;
+  }
+  #lib {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  #right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #tlt {
+    position: relative;
+    top: 0;
+  }
+  .logo {
+    display: relative;
+    margin-right:0;
+    margin-left:3%;
+  }
+  
+  #description {
+    position: relative;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+    max-width: 70%;
+  }
+  #credits_to {
+    position: relative;
+    max-height: 30px;
+    right: -70px;
+    bottom: -90px;
+  }
+  #credits {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 120px;
+    width: 100px;
+  }
+  
+  .img_des {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: navy;
+    visibility: hidden;
+    opacity: 0;
+  
+    /* transition effect. not necessary */
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  
+  #credits:hover .img_des {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #F41349;
+    border-radius: 20px;
+    outline: none;
+    font-family: Sans-serif;
+    font-size: 25px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-family: cursive;
+    font-size: 40px;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    main {
+      width: auto;
+    }
+  
+    #splash {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #lib {
+      height: 30%;
+      width: 100%;
+      display: block;
+    }
+  
+    #right {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    #tlt {
+      position: relative;
+      top: 0;
+    }
+    .logo {
+      margin-top: 5%;
+      max-height: 60%;
+      height: auto;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    #description {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 3%;
+      padding-top: 0px;
+      max-height: 100px;
+      width:100%;
+      height:auto;
+      overflow: scroll;
+    }
+  
+    #credits_to {
+      position: relative;
+      max-height: 30px;
+      right: -160px;
+      bottom: -90px;
+    }
+    #credits {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 120px;
+      width: 200px;
+    }
+  }
+  
